@@ -10,6 +10,16 @@ $(document).ready(
         clicPrev();
       }
     );
+    // $(document).Keydown(
+    //   function(){
+    //     console.log(event.which);
+    //     if (event.which == 100) {
+    //       clicNext();
+    //     } else if (event.which == 97) {
+    //         clicPrev();
+    //     }
+    //   }
+    // );
   }
 );
 function clicNext() {
@@ -54,4 +64,5 @@ function clicPrev() {
     circlePrev.addClass('active');
   }
 }
-// Bonus
+// Bonusissimo
+// Potremmo abbinare ad ogni icona un'immagine. Come  selezioniamo e abbiniamo l'immagine all'icona? Probabilmente con il .first() ed il .last()
