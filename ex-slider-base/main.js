@@ -10,6 +10,16 @@ $(document).ready(
         clicPrev();
       }
     );
+    $('.nav i').click(
+      function(){
+        $('.nav i').removeClass('active');
+        $(this).addClass('active');
+        var thisPosition = $(this).index();
+        var img = $('img').eq(thisPosition);
+        $('img').removeClass('active');
+        img.addClass('active');
+      }
+    );
     // $(document).Keydown(
     //   function(){
     //     console.log(event.which);
